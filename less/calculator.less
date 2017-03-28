@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.03.2017, 23:16:20
+    Author     : Александр
+*/
+
+@kf:0.7;
+@z-ind:30000;
+.m-calculator-focus{
+    opacity: 1!important;
+    -webkit-box-shadow: 5px 15px 27px rgba(0, 0, 0, .5)!important;
+    box-shadow: 5px 15px 27px rgba(0, 0, 0, .5)!important;    
+}
+.m-calculator{
+    opacity: 0.95;
+    z-index: @z-ind;
+    font-size:(@kf*16px);
+    border:1px solid gray;
+    background-color: #fefefe;
+    /*width: 300px;*/
+    /*height: 400px;*/
+    position: absolute;
+    background-clip: padding-box;
+    -webkit-box-shadow: 2px 12px 17px rgba(0, 0, 0, .1);
+    box-shadow: 2px 12px 17px rgba(0, 0, 0, .1);
+    >div{
+        width: 100%;
+    }
+    .calculator-head{
+        border-bottom: 1px solid #f1f1f1;
+        >span{
+            font-size: 0.8em;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        >a{
+            margin: 0;
+            padding: 2px 8px 0px;
+            float: right;
+            &:hover{
+                background-color: red;
+            }
+        }
+        &:hover{
+            cursor: move;
+        }
+    }
+    .calculator-display{
+        padding: 2px 4px;
+        font-size: 2.8em;
+        font-weight: bold;
+        text-align: right;
+        min-height: (@kf*67px);
+        overflow: hidden;
+        position:relative;
+        >div{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 2px 6px;
+            bottom: 0px;
+            right: 0px;
+            cursor: text;
+        }
+        >span{
+            z-index: (@z-ind+1);
+            font-size: 0.4em;
+            position: absolute;
+            /*width: 100%;*/
+            margin: 0;
+            padding: 2px 6px;
+            top: 0px;
+            left:0;
+            color:greenyellow;
+            cursor: default;
+        }
+    }
+    .dsm1{
+        >div{
+            font-size: 0.8em;
+        }
+    }
+    .dsm2{
+        >div{
+            font-size: 0.6em;
+        }
+    }
+    .dsm3{
+        >div{
+            font-size: 0.5em;
+        }
+    }
+    .calculator-display-info{
+        position:relative;
+        font-family: serif;
+        padding: (@kf*10px) 4px 1px;
+        font-size: 1.3em;
+        text-align: right;
+        min-height: (@kf*90px);
+        max-height: (@kf*90px);
+        max-width: (@kf*320px);
+        overflow:hidden;
+        position:relative;
+        >div{
+            position: absolute;
+            width: 100%;
+            margin: 0;
+            padding: 2px 6px;
+            top: 0px;            
+        }
+    }
+    .calculator-memory{
+        >.btn{
+            font-size: inherit;
+        }
+        padding: (@kf*4px) (@kf*4px);
+        border-bottom: 1px solid #f1f1f1;
+        >disabled{
+            color: gainsboro;
+        }
+        >a{
+            /*font-size: (@kf*1em)!important;*/
+            color:black;
+            border-radius: 0px;
+            padding: 0px (@kf*18px);
+            &:hover{
+                background-color: #e9e9e9;
+            }
+        }
+    }
+    .calculator-keyboard{
+        
+        width: 100%;
+        padding: 4px 0px;
+        margin:0px;
+        >table{
+            margin:0 4px;
+            display:block;
+            >tbody{
+                >tr{
+                    >td{
+                        >a{
+                            color:black;
+                            border-radius: 0px;
+                            width: (@kf*78px);
+                            height: (@kf*50px);
+                            /*padding:6px 25px;*/
+                            font-size: 1.4em;
+                            &:hover{
+                                background-color: #e9e9e9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

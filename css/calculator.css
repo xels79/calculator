@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.03.2017, 23:16:20
+    Author     : Александр
+*/
+.m-calculator-focus {
+  opacity: 1!important;
+  -webkit-box-shadow: 5px 15px 27px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 5px 15px 27px rgba(0, 0, 0, 0.5) !important;
+}
+.m-calculator {
+  opacity: 0.95;
+  z-index: 30000;
+  font-size: 11.2px;
+  border: 1px solid gray;
+  background-color: #fefefe;
+  /*width: 300px;*/
+  /*height: 400px;*/
+  position: absolute;
+  background-clip: padding-box;
+  -webkit-box-shadow: 2px 12px 17px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 12px 17px rgba(0, 0, 0, 0.1);
+}
+.m-calculator > div {
+  width: 100%;
+}
+.m-calculator .calculator-head {
+  border-bottom: 1px solid #f1f1f1;
+}
+.m-calculator .calculator-head > span {
+  font-size: 0.8em;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.m-calculator .calculator-head > a {
+  margin: 0;
+  padding: 2px 8px 0px;
+  float: right;
+}
+.m-calculator .calculator-head > a:hover {
+  background-color: red;
+}
+.m-calculator .calculator-head:hover {
+  cursor: move;
+}
+.m-calculator .calculator-display {
+  padding: 2px 4px;
+  font-size: 2.8em;
+  font-weight: bold;
+  text-align: right;
+  min-height: 46.9px;
+  overflow: hidden;
+  position: relative;
+}
+.m-calculator .calculator-display > div {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 2px 6px;
+  bottom: 0px;
+  right: 0px;
+  cursor: text;
+}
+.m-calculator .calculator-display > span {
+  z-index: 30001;
+  font-size: 0.4em;
+  position: absolute;
+  /*width: 100%;*/
+  margin: 0;
+  padding: 2px 6px;
+  top: 0px;
+  left: 0;
+  color: greenyellow;
+  cursor: default;
+}
+.m-calculator .dsm1 > div {
+  font-size: 0.8em;
+}
+.m-calculator .dsm2 > div {
+  font-size: 0.6em;
+}
+.m-calculator .dsm3 > div {
+  font-size: 0.5em;
+}
+.m-calculator .calculator-display-info {
+  font-family: serif;
+  padding: 7px 4px 1px;
+  font-size: 1.3em;
+  text-align: right;
+  min-height: 63px;
+  max-height: 63px;
+  max-width: 224px;
+  overflow: hidden;
+  position: relative;
+}
+.m-calculator .calculator-display-info > div {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 2px 6px;
+  top: 0px;
+}
+.m-calculator .calculator-memory {
+  padding: 2.8px 2.8px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.m-calculator .calculator-memory > .btn {
+  font-size: inherit;
+}
+.m-calculator .calculator-memory > disabled {
+  color: gainsboro;
+}
+.m-calculator .calculator-memory > a {
+  /*font-size: (@kf*1em)!important;*/
+  color: black;
+  border-radius: 0px;
+  padding: 0px 12.6px;
+}
+.m-calculator .calculator-memory > a:hover {
+  background-color: #e9e9e9;
+}
+.m-calculator .calculator-keyboard {
+  width: 100%;
+  padding: 4px 0px;
+  margin: 0px;
+}
+.m-calculator .calculator-keyboard > table {
+  margin: 0 4px;
+  display: block;
+}
+.m-calculator .calculator-keyboard > table > tbody > tr > td > a {
+  color: black;
+  border-radius: 0px;
+  width: 54.6px;
+  height: 35px;
+  /*padding:6px 25px;*/
+  font-size: 1.4em;
+}
+.m-calculator .calculator-keyboard > table > tbody > tr > td > a:hover {
+  background-color: #e9e9e9;
+}
+/*# sourceMappingURL=calculator.css.map */
