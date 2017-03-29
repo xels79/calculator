@@ -1,5 +1,5 @@
 # Калькулятор на jQuery
-Необходим JQuery и jQuery UI [страница загрузки](https://code.jquery.com)
+Необходим [JQuery][site1] и [jQuery UI][site1] [страница загрузки](https://code.jquery.com)
 ```html
 $('#id_элемента').calculator();
 ```	
