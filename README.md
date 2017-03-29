@@ -6,4 +6,4 @@
 ```	
 	Срабатывает на клик.
 
-[site1]:(https://code.jquery.com)
+[site1]:https://code.jquery.com
