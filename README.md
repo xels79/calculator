@@ -1,8 +1,8 @@
 # Калькулятор на jQuery
- 	Необходим JQuery и jQuery UI [страница загрузки][site1]
+Необходим JQuery и jQuery UI [страница загрузки](https://code.jquery.com)
 ```html
-	$('#id_элемента').calculator();
+$('#id_элемента').calculator();
 ```	
-	Срабатывает на клик.
+Срабатывает на клик.
 
 [site1]:https://code.jquery.com
